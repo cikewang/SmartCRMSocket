@@ -59,7 +59,7 @@ class Events
    public static function onClose($client_id)
    {
         // 向所有人发送 
-        $info = ['action' => 'close', 'notice' => []];
+        $info = ['action' => 'close', 'notice' => ['client_id' => $client_id]];
         $info = json_encode($info);
         
         GateWay::sendToAll($info);
