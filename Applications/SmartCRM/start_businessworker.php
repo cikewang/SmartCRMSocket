@@ -25,9 +25,9 @@ $worker = new BusinessWorker();
 // worker名称
 $worker->name = 'SmartCRMBusinessWorker';
 // bussinessWorker进程数量
-$worker->count = 4;
+$worker->count = 8;
 // 服务注册地址
-$worker->registerAddress = '172.16.16.49:1238';
+$worker->registerAddress = '182.92.22.155:1238';
 
 // 如果不是在根目录启动，则运行runAll方法
 if(!defined('GLOBAL_START'))
